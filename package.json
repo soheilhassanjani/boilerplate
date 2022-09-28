@@ -1,0 +1,16 @@
+{
+  "name": "boilerplate-gulp",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "watch": "gulp"
+  },
+  "keywords": [],
+  "author": "soheil hasanjani",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-compile-handlebars": "^0.6.1",
+    "gulp-rename": "^2.0.0"
+  }
+}
