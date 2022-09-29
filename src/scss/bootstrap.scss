@@ -1,3 +1,55 @@
-$primary: #b91f8d;
+$primary: #0796ff;
+$secondary: #4e4c4d;
+$success: #0dd12c;
+$info: #82caff;
+$warning: #ffba07;
+$danger: #ff0000;
+
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+
+$font-sizes: map-merge(
+  $font-sizes,
+  (
+    12: 0.75rem,
+    14: 0.875rem,
+    16: 1rem,
+    18: 1.125rem,
+    20: 1.25rem,
+    22: 1.375rem,
+    24: 1.5rem,
+    26: 1.625rem,
+    28: 1.75rem,
+    30: 1.875rem,
+    32: 2rem,
+    34: 2.125rem,
+    36: 2.25rem,
+    40: 2.5rem,
+    56: 3.5rem,
+    64: 4rem,
+  )
+);
+
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/utilities";
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: bg,
+      values:
+        map-merge(
+          $utilities-bg-colors,
+          (
+            "transparent": transparent,
+            "muted": #a6a5a5,
+          )
+        ),
+    ),
+  )
+);
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
